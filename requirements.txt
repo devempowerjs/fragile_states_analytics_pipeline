@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+openpyxl
+XlsxWriter
+scipy
+plotly
+missingno
+scikit-learn
+jinja2
+pdfkit

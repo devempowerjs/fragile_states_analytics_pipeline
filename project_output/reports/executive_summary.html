@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Analytics Report: Fragile States Index</title>
+    <style>
+        :root {
+            --primary-color: #2980B9;
+            --secondary-color: #27AE60;
+            --background: #f4f7f6;
+            --text-color: #2C3E50;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 40px 0;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--background);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .kpi-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .kpi-card {
+            background: var(--primary-color);
+            color: white;
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .kpi-card h3 { margin: 0; font-size: 1.2em; opacity: 0.9; }
+        .kpi-card p { margin: 10px 0 0; font-size: 2em; font-weight: bold; }
+        
+        .chart-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .chart-box {
+            text-align: center;
+        }
+        .chart-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .full-width-chart {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .full-width-chart img {
+            max-width: 80%;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--muted);
+            font-size: 0.9em;
+            background-color: var(--card-bg);
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enterprise Data Analytics Report</h1>
+        <p>Fragile States Index Analysis | Generated on May 24, 2026</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="kpi-container">
+                <div class="kpi-card">
+                    <h3>Total Countries Analyzed</h3>
+                    <p>179</p>
+                </div>
+                <div class="kpi-card" style="background: #E74C3C;">
+                    <h3>Highest Risk Score</h3>
+                    <p>111.89999999999999 (Somalia)</p>
+                </div>
+                <div class="kpi-card" style="background: #27AE60;">
+                    <h3>Lowest Risk Score</h3>
+                    <p>14.5 (Norway)</p>
+                </div>
+            </div>
+            <p>This automated enterprise report provides a comprehensive analysis of the Fragile States Index dataset. The data was cleaned, anomalies were handled, and machine learning (K-Means Clustering) was applied to categorize countries into distinct risk tiers.</p>
+        </div>
+
+        <div class="section">
+            <h2>Rankings Overview</h2>
+            <div class="chart-grid">
+                <div class="chart-box">
+                    <h3>Top 10 Most Fragile States</h3>
+                    <img src="../charts/top_10_fragile.png" alt="Top 10 Fragile">
+                </div>
+                <div class="chart-box">
+                    <h3>Top 10 Most Stable States</h3>
+                    <img src="../charts/top_10_stable.png" alt="Top 10 Stable">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Statistical Distributions & Clustering</h2>
+            <p>Countries were grouped into 4 distinct risk tiers based on 12 socio-economic and political indicators using K-Means Clustering.</p>
+            <div class="chart-grid">
+                <div class="chart-box">
+                    <img src="../charts/total_score_distribution.png" alt="Score Distribution">
+                </div>
+                <div class="chart-box">
+                    <img src="../charts/economy_vs_legitimacy.png" alt="Economy vs Legitimacy">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Indicator Correlations</h2>
+            <p>The correlation matrix below illustrates the relationships between various pressures, such as economic inequality, state legitimacy, and demographic pressures. A value closer to 1.0 indicates a strong positive correlation.</p>
+            <div class="full-width-chart">
+                <img src="../charts/correlation_heatmap.png" alt="Correlation Matrix">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Data Sample (Top 5 Fragile)</h2>
+            <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Country</th>
+      <th>Rank</th>
+      <th>Total</th>
+      <th>Risk_Tier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Somalia</td>
+      <td>1</td>
+      <td>111.9</td>
+      <td>Alert</td>
+    </tr>
+    <tr>
+      <td>Yemen</td>
+      <td>2</td>
+      <td>108.9</td>
+      <td>Alert</td>
+    </tr>
+    <tr>
+      <td>South Sudan</td>
+      <td>3</td>
+      <td>108.5</td>
+      <td>Alert</td>
+    </tr>
+    <tr>
+      <td>Congo Democratic Republic</td>
+      <td>4</td>
+      <td>107.2</td>
+      <td>Alert</td>
+    </tr>
+    <tr>
+      <td>Syria</td>
+      <td>5</td>
+      <td>107.1</td>
+      <td>Alert</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Mayank Raj (devempowerjs) All rights reserved. | <a href="https://github.com/devempowerjs" target="_blank">GitHub Profile</a>
+    </footer>
+</body>
+</html>
