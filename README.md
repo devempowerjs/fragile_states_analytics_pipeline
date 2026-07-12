@@ -143,10 +143,11 @@ Upon successful execution, the system will populate the `project_output/` direct
 - **Scheduled Automation**: Implement cron jobs or Airflow DAGs for recurring execution.
 - **Unit Testing**: Implement `pytest` coverage for data validation and mathematical transformations.
 
-## Author
-Author: Mayank Raj  
-GitHub: https://github.com/devempowerjs
-Website: https://devempowerjs.vercel.app
+## Author  
+
+Mayank Raj (devempowerjs)
+
+Building Software That Matters • Problem Solver • Open Source
 
 ## License
 MIT License
